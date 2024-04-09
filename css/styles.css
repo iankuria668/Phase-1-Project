@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+    font-family: 'Blippo', 'fantasy', 'cursive';
+    background-image: url("../images/background.jpg");
+    background-color: rgb(255, 255, 255);
+}
+
+#content{
+    width: 100%;
+    max-width: 1500px;
+    margin: 30% auto;
+    margin-top: 20%;
+    border-color: cornsilk;
+    border-spacing: 2%;
+    border-radius: 15px;
+    
+}
+#quote-box{
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border-color: yellow;
+    padding: auto;
+    margin: 20px;
+}
+
+
+#list{
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border-color: yellow;
+    padding: auto;
+    margin: 20px;
+}
+
+#description{
+    font-size: 20px;
+}
+
+#new-quote{
+    text-align: center;
+    background-color: palevioletred;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#like-quote{
+    font-size: large;
+    background-color: black;
+    border-color: yellow;
+    border-radius: 15px;
+}
+
+#liked-quotes{
+    font-size: large;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+    
