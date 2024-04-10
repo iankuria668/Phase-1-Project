@@ -18,11 +18,18 @@ document.addEventListener("DOMContentLoaded", function () {
                 return response.json();
             })
             .then(data => {
-                // Store the JSON data in an array
+                // Storing the JSON data in an array
                 const quotesArray = data;
-                //Creating a random number
+    
+                // Iterating over each quote in the array and logging it in the console
+                quotesArray.forEach(quote => {
+                    console.log(quote.text);
+                    console.log(quote.author);
+                });
+    
+                //Creating a random index
                 const index = Math.floor(Math.random() * quotesArray.length);
-                // Select a random quote from the array
+                // Select a random quote from the array using the random index
                 const selectedQuote = quotesArray[index];
                 console.log(selectedQuote);
                 // Display the quote and author
@@ -30,12 +37,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 const newAuthor = selectedQuote.author;
                 console.log(newQuote);
                 console.log(newAuthor);
-
+    
                 quoteText.innerText = newQuote;
                 authorName.innerText = `~ ${newAuthor} ~`;
             })
-            
+            .catch(error => {
+                // Handle errors
+                console.error('Error fetching quotes:', error);
+            });
     }
+    
 
     // Adding a function to add the liked quotes to the list
     function  addToLikedList(){
