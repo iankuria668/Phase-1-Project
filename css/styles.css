@@ -45,6 +45,7 @@ body{
     font-size: 20px;
     border-radius: 15px;
     padding: 10px;
+    transition: all 0.3s;
 }
 
 .blackButton{
@@ -71,4 +72,14 @@ body{
     font-weight: bolder;
 }
 
-    
+.blur{
+    opacity: 0;
+    filter: blur(10px);
+    transition: opacity 0.5s ease;
+}
+
+#instructions{
+    font-style: italic;
+    font-family: cursive;
+    font-weight: lighter;
+}

@@ -66,4 +66,34 @@ document.addEventListener("DOMContentLoaded", function () {
     likeQuoteButton.addEventListener("click", addToLikedList);
     // Event listener for the new quote button
     newQuoteButton.addEventListener("click", getQuotes);
+
+    // Adding a hover effect to the pink buttons
+    // Selecting the button class
+    let myButtons = document.querySelectorAll(".pinkButton");
+    myButtons.forEach((button) => {
+        //Adding the event listener mouseenter
+        button.addEventListener("mouseenter", () => {0
+            button.style.transform = "scale(1.2)";
+        });
+        //Adding the event listener mouseleave
+        button.addEventListener("mouseleave", () => {
+            button.style.transform = "scale(1)";
+        }); 
+    });
+
+    // Adding a blur effect function that disappear when scrolled to the liked quotes
+    function blurEffect(){
+        let likedQuotesblur = document.getElementById("list");
+        let scrollPosition = window.scrollY;
+        //Setting the threshold
+        let threshold = 200;
+        if (scrollPosition > threshold) {
+            likedQuotesblur.style.opacity = '1';
+            likedQuotesblur.classList.remove("blur");
+        } else {
+            likedQuotesblur.style.opacity = '0';
+            likedQuotesblur.classList.add("blur");
+        }
+    }
+    window.addEventListener('scroll', blurEffect);
 });
