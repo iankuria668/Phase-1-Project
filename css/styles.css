@@ -6,8 +6,8 @@ body{
 }
 
 #content{
-    width: 100%;
-    max-width: 1500px;
+    width: 50%;
+    max-width: auto;
     margin: 30% auto;
     margin-top: 20%;
     border-color: cornsilk;
@@ -37,7 +37,7 @@ body{
     font-size: 20px;
 }
 
-#new-quote{
+.pinkButton{
     text-align: center;
     background-color: palevioletred;
     color: white;
@@ -47,9 +47,9 @@ body{
     padding: 10px;
 }
 
-#like-quote{
-    font-size: large;
+.blackButton{
     background-color: black;
+    color: white;
     border-color: yellow;
     border-radius: 15px;
 }
@@ -60,5 +60,15 @@ body{
     font-weight: bolder;
 }
 
+#quoteText{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#authorName{
+    font-size: large;
+    font-style: italic;
+    font-weight: bolder;
+}
 
     
